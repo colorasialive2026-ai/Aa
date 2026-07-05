@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="#0b0b0b" name="theme-color">
+  <meta content="Halaman data pemesanan tiket SUNSET DI KEBUN 2026" name="description">
+  <title>SUNSET DI KEBUN 2026 | Data Pemesanan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- LOADING OVERLAY -->
+  <div class="form-loading" id="formLoading" aria-hidden="true">
+    <div class="spinner"></div>
+    <p>Mohon tunggu...<br>Sedang memproses data pemesanan</p>
+  </div>
+
+  <div class="container">
+    <!-- HEADER -->
+    <header class="form-header">
+      <a href="tiket.html" class="form-back" aria-label="Kembali">&larr; Kembali</a>
+      <div class="form-logo">SUNSET DI KEBUN</div>
+    </header>
+
+    <!-- STEPPER -->
+    <div class="stepper" aria-label="Langkah pemesanan">
+      <div class="step completed">
+        <div class="circle">1</div>
+        <p>Pilih Tiket</p>
+      </div>
+      <div class="step active">
+        <div class="circle">2</div>
+        <p>Data Pemesan</p>
+      </div>
+      <div class="step">
+        <div class="circle">3</div>
+        <p>Pembayaran</p>
+      </div>
+    </div>
+
+    <!-- EVENT INFO -->
+    <div class="card">
+      <div class="event-card">
+        <img alt="Banner Event" src="images/banner.png" loading="lazy" width="560" height="280">
+        <div class="event-info">
+          <h2>SUNSET DI KEBUN 2026</h2>
+          <p>Sabtu, 4 Juli 2026</p>
+          <p>19.00 WIB</p>
+          <p>Indonesia</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- DATA PEMESAN -->
+    <div class="card">
+      <div class="section">
+        <div class="section-title">Data Pemesan</div>
+        <label for="nama">Nama Lengkap <span class="required">*</span></label>
+        <input autocomplete="name" id="nama" placeholder="Masukkan nama lengkap" type="text">
+        <label for="identitas">Jenis Identitas <span class="required">*</span></label>
+        <select id="identitas">
+          <option value="">Pilih Jenis Identitas</option>
+          <option>KTP</option>
+          <option>SIM</option>
+          <option>Paspor</option>
+          <option>Kartu Pelajar</option>
+        </select>
+        <label for="nomorId">Nomor Identitas <span class="required">*</span></label>
+        <input autocomplete="off" id="nomorId" placeholder="Masukkan nomor identitas" type="text">
+        <label for="email">E-mail <span class="required">*</span></label>
+        <input autocomplete="email" id="email" placeholder="contoh@email.com" type="email">
+        <label for="wa">Nomor WhatsApp <span class="required">*</span></label>
+        <div class="phone">
+          <select id="kodeNegara">
+            <option value="+62">+62</option>
+            <option value="+60">+60</option>
+            <option value="+65">+65</option>
+            <option value="+66">+66</option>
+          </select>
+          <input autocomplete="tel" id="wa" inputmode="tel" placeholder="81234567890" type="tel">
+        </div>
+        <label for="alamat">Alamat Lengkap <span class="required">*</span></label>
+        <textarea autocomplete="street-address" id="alamat" placeholder="Masukkan alamat lengkap" rows="4"></textarea>
+      </div>
+    </div>
+
+    <!-- DATA PEMEGANG TIKET -->
+    <div class="card">
+      <div class="section">
+        <div class="section-title">Data Pemegang Tiket</div>
+        <div id="ticketHolders"></div>
+      </div>
+    </div>
+
+    <!-- RINGKASAN -->
+    <div class="card">
+      <div class="summary">
+        <div class="section-title">Ringkasan Pesanan</div>
+        <div class="row"><span>Nama Event</span><strong>SUNSET DI KEBUN 2026</strong></div>
+        <div class="row"><span>Total Tiket</span><strong id="summaryQty">0</strong></div>
+        <hr>
+        <div id="summaryItems"></div>
+        <hr>
+        <div class="row"><span>Subtotal</span><strong id="summarySubtotal">Rp0</strong></div>
+        <div class="row total"><span>Grand Total</span><strong id="grandTotal">Rp0</strong></div>
+        <div class="agreement">
+          <input id="setuju" type="checkbox">
+          <label for="setuju"><p>Saya menyatakan bahwa seluruh data yang saya isi adalah benar, lengkap, dan dapat dipertanggungjawabkan. Saya telah membaca, memahami, serta menyetujui seluruh syarat dan ketentuan pembelian tiket.</p></label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="form-footer">
+    <div class="footer-info">
+      <div>
+        <div class="footer-label">Grand Total</div>
+        <div class="footer-price" id="footerTotal">Rp0</div>
+      </div>
+    </div>
+    <button class="checkout" disabled id="checkoutBtn">Lanjut Pembayaran</button>
+  </div>
+
+  <script src="js/form.js" defer></script>
+</body>
+</html>
