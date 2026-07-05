@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="#0b0b0b" name="theme-color">
+  <meta content="Halaman pemilihan tiket SUNSET DI KEBUN 2026" name="description">
+  <title>SUNSET DI KEBUN 2026 | Pilih Tiket</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- HEADER -->
+    <header class="ticket-header">
+      <a class="logo" href="index.html">
+        <img alt="Logo Event" src="images/logo-event.png" width="48" height="48">
+        <span>SUNSET DI KEBUN</span>
+      </a>
+      <div class="ticket-country">ID</div>
+    </header>
+
+    <!-- HERO -->
+    <section class="ticket-hero">
+      <img alt="Sunset di Kebun" src="images/banner.png" loading="eager" width="900" height="450">
+      <div class="ticket-hero-overlay"></div>
+      <div class="ticket-hero-content">
+        <h2>Sunset di Kebun 2026</h2>
+        <p>Music &bull; Nature &bull; Culture &bull; Experience</p>
+      </div>
+    </section>
+
+    <!-- JUDUL -->
+    <section class="ticket-page-title">
+      <h3>Pilih Tiket</h3>
+      <p>Pilih kategori tiket yang tersedia kemudian lanjutkan ke halaman pengisian data pemesan.</p>
+    </section>
+
+    <!-- INFO PROMO -->
+    <div class="info-box">
+      <h3 class="info-title">Promo Hari Ini</h3>
+      <ul class="info-list">
+        <li>Harga sudah termasuk tiket masuk.</li>
+        <li>Tiket resmi dari SUNSET DI KEBUN.</li>
+        <li>Kuota sangat terbatas.</li>
+        <li>Tiket yang sudah dibeli tidak dapat dibatalkan.</li>
+      </ul>
+    </div>
+
+    <!-- GRID TIKET -->
+    <div class="ticket-grid" id="ticketGrid">
+      <!-- Diisi oleh JavaScript -->
+    </div>
+
+    <!-- INFO PEMBELIAN -->
+    <div class="info-box">
+      <h3 class="info-title">Informasi Pembelian</h3>
+      <ul class="info-list">
+        <li>Harga sudah termasuk tiket masuk.</li>
+        <li>Belum termasuk biaya layanan dan pajak hiburan.</li>
+        <li>Tiket yang sudah dibeli tidak dapat dibatalkan.</li>
+        <li>Barcode akan dikirim setelah pembayaran berhasil.</li>
+        <li>Harap membawa identitas asli saat penukaran tiket.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- CHECKOUT BAR -->
+  <div class="checkout-bar">
+    <div class="checkout-info">
+      <span id="qtyText">0 Tiket Dipilih</span>
+      <div class="total" id="totalText">Rp 0</div>
+    </div>
+    <button class="checkout-btn" disabled id="checkout">BELI TIKET</button>
+  </div>
+
+  <script src="js/tiket.js" defer></script>
+</body>
+</html>
