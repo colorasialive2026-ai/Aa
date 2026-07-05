@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="#0b0b0b" name="theme-color">
+  <meta content="Pembayaran berhasil SUNSET DI KEBUN 2026" name="description">
+  <title>SUNSET DI KEBUN 2026 | Pembayaran Berhasil</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container success-container">
+    <!-- SUKSES ICON -->
+    <div class="success-icon-wrap fade-up">
+      <div class="success-icon">
+        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+      </div>
+      <h2 class="success-title">Pembayaran Berhasil</h2>
+      <p class="success-subtitle">Terima kasih, tiket Anda telah dikonfirmasi.</p>
+    </div>
+
+    <!-- TIKET DIGITAL -->
+    <div class="ticket-digital fade-up" id="ticketDigital">
+      <div class="ticket-digital-header">
+        <img alt="Logo" src="images/logo-event.png" width="40" height="40">
+        <div>
+          <h3>SUNSET DI KEBUN 2026</h3>
+          <p>4 Juli 2026 &bull; 19.00 WIB</p>
+        </div>
+      </div>
+      <div class="ticket-digital-divider"></div>
+      <div class="ticket-digital-body">
+        <div class="ticket-digital-row">
+          <span>Order ID</span>
+          <strong id="sOrderId">-</strong>
+        </div>
+        <div class="ticket-digital-row">
+          <span>Nama Pemesan</span>
+          <strong id="sNama">-</strong>
+        </div>
+        <div class="ticket-digital-row">
+          <span>Jenis Tiket</span>
+          <strong id="sJenis">-</strong>
+        </div>
+        <div class="ticket-digital-row">
+          <span>Jumlah</span>
+          <strong id="sJumlah">0</strong>
+        </div>
+        <div class="ticket-digital-row">
+          <span>Total Bayar</span>
+          <strong id="sTotal">Rp 0</strong>
+        </div>
+      </div>
+      <div class="ticket-digital-divider"></div>
+      <div class="ticket-digital-footer">
+        <div class="ticket-digital-qr">
+          <img alt="QR Tiket" src="images/qris-sunset.png" width="120" height="120">
+        </div>
+        <p class="ticket-digital-note">Tunjukkan QR code ini saat masuk ke area festival.</p>
+      </div>
+    </div>
+
+    <!-- TOMBOL -->
+    <div class="success-actions fade-up">
+      <button class="btn btn-primary success-btn" onclick="window.print()">Cetak / Simpan PDF</button>
+      <a class="btn btn-outline success-btn" href="index.html">Kembali ke Beranda</a>
+    </div>
+
+    <!-- INFO -->
+    <div class="success-info fade-up">
+      <div class="info-box">
+        <h3 class="info-title">Informasi Penting</h3>
+        <ul class="info-list">
+          <li>Simpan halaman ini atau screenshot tiket Anda.</li>
+          <li>Bawa identitas asli sesuai data pemesan.</li>
+          <li>Pintu dibuka mulai pukul 16.00 WIB.</li>
+          <li>Tiket tidak dapat dipindahtangankan.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/success.js" defer></script>
+</body>
+</html>
